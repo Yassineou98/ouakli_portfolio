@@ -35,11 +35,11 @@ $(function () {
                     $('#contactForm').trigger("reset");
                 },
                 error: function () {
-                    $('#error').html("<div class='alert alert-danger'>");
-                    $('#error > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    $('#success').html("<div class='alert alert-danger'>");
+                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
-                    $('#error > .alert-danger').append($("<strong>").text("Désolé " + name + ", il semble que notre serveur de messagerie ne réponde pas. Veuillez réessayer plus tard !"));
-                    $('#error > .alert-danger').append('</div>');
+                    $('#success > .alert-danger').append($("<strong>").text("Désolé " + name + ", il semble que notre serveur de messagerie ne réponde pas. Veuillez réessayer plus tard !"));
+                    $('#success > .alert-danger').append('</div>');
                     $('#contactForm').trigger("reset");
                 },
                 complete: function () {
