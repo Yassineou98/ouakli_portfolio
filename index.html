@@ -678,33 +678,32 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="contact-form text-center">
-                    <div id="success"></div>
-                    <form action="https://formspree.io/f/xaykqpay" method="POST" target="_blank">
+                    <form action="https://formspree.io/f/xaykqpay" method="POST">
                         <div class="form-row">
                             <div class="control-group col-sm-6">
-                                <input type="text" class="form-control p-4" id="name" placeholder="Votre Nom et Prénom"
+                                <input type="text" class="form-control p-4" name="fullname" placeholder="Votre Nom et Prénom"
                                        required="required" data-validation-required-message="Veuillez entrer votre Nom et Prénom"/>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group col-sm-6">
-                                <input type="email" class="form-control p-4" id="email" placeholder="Votre adresse e-mail"
+                                <input type="email" class="form-control p-4" name="email" placeholder="Votre adresse e-mail"
                                        required="required" data-validation-required-message="Veuillez entrer votre adresse e-mail"/>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <div class="control-group">
+                      <!--  <div class="control-group">
                             <input type="text" class="form-control p-4" id="subject" placeholder="Objet"
                                    required="required" data-validation-required-message="Veuillez entrer un objet"/>
                             <p class="help-block text-danger"></p>
-                        </div>
+                        </div>-->
                         <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                <textarea class="form-control py-3 px-4" rows="5" name="message" placeholder="Message"
                                           required="required"
                                           data-validation-required-message="Veuillez entrer votre message"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                         <div>
-                            <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Envoyer
+                            <button class="btn btn-outline-primary" type="submit">Envoyer
                             </button>
                         </div>
                     </form>
